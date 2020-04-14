@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "devDependencies": {
+    "child_process": "^1.0.2",
+    "csso": "^4.0.3",
+    "fs": "0.0.1-security",
+    "fs-extra": "^9.0.0",
+    "glob": "^7.1.6",
+    "html-minifier": "^4.0.0",
+    "node-gzip": "^1.1.2",
+    "path": "^0.12.7",
+    "postcss": "^7.0.27",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "purgecss": "^2.1.2",
+    "purgecss-whitelister": "^2.4.0",
+    "rollup": "^2.3.4",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "rollup-plugin-includepaths": "^0.2.3",
+    "tailwindcss": "^1.2.0",
+    "terser": "^4.6.11",
+    "xmldom": "^0.3.0"
+  },
+  "dependencies": {
+    "stage0": "0.0.25"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "build": "node ./.imu/run.js client-release",
+    "new": "node ./.imu/run.js new",
+    "client-debug": "node ./.imu/run.js client-debug",
+    "client-release": "node ./.imu/run.js client-release",
+    "reset": "node ./.imu/run.js reset"
+  }
+}

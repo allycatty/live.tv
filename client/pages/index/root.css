@@ -1,0 +1,56 @@
+@import "style/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.svg {
+    @apply h-8 w-8 fill-current inline-block text-center bg-cover;
+}
+
+.svg-display {
+    @apply h-64 w-64 fill-current inline-block text-center bg-cover;
+}
+
+video::-webkit-media-controls {
+    @apply hidden;
+}
+
+.video {
+    @apply h-screen w-full bg-black z-0;
+}
+
+.control-panel {
+    @apply absolute fixed bottom-0 right-0 mb-2 mr-2 z-50;
+}
+
+.audio-panel {
+    @apply flex content-center bg-gray-transparent rounded-l-lg;
+}
+
+.volume-control {
+    @apply -mt-40 bg-gray-transparent px-3 py-3 rounded-lg w-full;
+}
+
+.unmute-button {
+    @apply text-gray-700 px-2 py-2;
+}
+
+.mute-button {
+    @apply text-white px-2 py-2;
+}
+
+.slider {
+    @apply bg-gray-transparent border-0 outline-none;
+}
+
+.slider::-webkit-slider-thumb {
+    @apply bg-gray-700 rounded-full appearance-none cursor-pointer w-6 h-6;
+    -webkit-appearance: none;
+}
+
+.slider::-moz-range-thumb {
+    @apply bg-gray-700 rounded-full cursor-pointer w-6 h-6;
+}
+
+.fullscreen-button {
+    @apply text-white bg-gray-transparent px-2 py-2 rounded-r-lg;
+}
