@@ -18,6 +18,14 @@ video::-webkit-media-controls {
     @apply h-screen w-full bg-black z-0;
 }
 
+.modal {
+    @apply fixed inset-x-0 inset-y-0 overflow-hidden flex justify-center z-99;
+}
+
+.unmute-modal {
+    @apply text-center text-white text-3xl my-auto bg-gray-transparent px-3 py-3 rounded-lg;
+}
+
 .control-panel {
     @apply absolute fixed bottom-0 right-0 mb-2 mr-2 z-50;
 }
